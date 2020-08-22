@@ -10,7 +10,7 @@ from numpy import sqrt
 from PyQt5 import QtGui, QtCore
 import PyQt5.QtWidgets as qw
 
-from venCalcu import Ui_VenCalcu
+from Forms.venCalcu import Ui_VenCalcu
 
 class ProyCalcu(qw.QWidget):
     caract=res=temp=mem=""
