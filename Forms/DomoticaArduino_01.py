@@ -9,6 +9,8 @@
 
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+#import InsertImgToQtDesigner_rc #Debido a que está dentro de otra carpeta, no lo puedo importar.
+#Y por ende, no lo puedo usar para poner las imágenes.
 
 
 class Ui_SisDomArduino(object):
@@ -354,4 +356,3 @@ class Ui_SisDomArduino(object):
     def retranslateUi(self, SisDomArduino):
         _translate = QtCore.QCoreApplication.translate
         self.bSalir.setShortcut(_translate("SisDomArduino", "Ctrl+W"))
-#import InsertImgToQtDesigner_rc
