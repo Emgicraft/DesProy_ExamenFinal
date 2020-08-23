@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CalcuTemperatura</class>
+ <widget class="QWidget" name="CalcuTemperatura">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>300</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string notr="true">Calculadora de Temperatuta</string>
+  </property>
+  <property name="toolTip">
+   <string notr="true"/>
+  </property>
+  <property name="statusTip">
+   <string notr="true"/>
+  </property>
+  <property name="whatsThis">
+   <string notr="true"/>
+  </property>
+  <property name="accessibleName">
+   <string notr="true"/>
+  </property>
+  <property name="accessibleDescription">
+   <string notr="true"/>
+  </property>
+  <property name="locale">
+   <locale language="Spanish" country="Peru"/>
+  </property>
+  <property name="windowFilePath">
+   <string notr="true"/>
+  </property>
+  <widget class="QComboBox" name="comboBox">
+   <property name="geometry">
+    <rect>
+     <x>70</x>
+     <y>60</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string notr="true"/>
+   </property>
+   <property name="statusTip">
+    <string notr="true"/>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleName">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleDescription">
+    <string notr="true"/>
+   </property>
+   <property name="currentText">
+    <string notr="true">Convertir...</string>
+   </property>
+   <property name="placeholderText">
+    <string notr="true">Convertir...</string>
+   </property>
+   <item>
+    <property name="text">
+     <string notr="true">Celsius a Kelvin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">Celsius a Fahrenheit</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">Celsius a Rankine</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">Kelvin a Celsius</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">Kelvin a Fahrenheit</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">Kelvin a Rankine</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">Fahrenheit a Celsius</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">Fahrenheit a Kelvin</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">Fahrenheit a Rankine</string>
+    </property>
+   </item>
+  </widget>
+  <widget class="QLineEdit" name="lineEdit">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>110</y>
+     <width>101</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pushButton">
+   <property name="geometry">
+    <rect>
+     <x>110</x>
+     <y>190</y>
+     <width>91</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="toolTip">
+    <string notr="true">Calcular</string>
+   </property>
+   <property name="statusTip">
+    <string notr="true"/>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleName">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleDescription">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string notr="true">Calcular</string>
+   </property>
+   <property name="shortcut">
+    <string notr="true">Return, Enter</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="titulo1">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>20</y>
+     <width>260</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>16</pointsize>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string notr="true"/>
+   </property>
+   <property name="statusTip">
+    <string notr="true"/>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleName">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleDescription">
+    <string notr="true"/>
+   </property>
+   <property name="locale">
+    <locale language="Spanish" country="Peru"/>
+   </property>
+   <property name="text">
+    <string>Conversión de Temperatura</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

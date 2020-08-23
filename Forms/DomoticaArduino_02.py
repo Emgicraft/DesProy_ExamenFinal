@@ -60,6 +60,7 @@ class Ui_SisDomArduino(object):
         self.bLed1.setLocale(QtCore.QLocale(QtCore.QLocale.Spanish, QtCore.QLocale.Peru))
         self.bLed1.setText("Led 01 On/Off")
         self.bLed1.setObjectName("bLed1")
+
         self.bEscuchar = QtWidgets.QPushButton(SisDomArduino)
         self.bEscuchar.setEnabled(True)
         self.bEscuchar.setGeometry(QtCore.QRect(80, 310, 70, 30))
@@ -76,6 +77,7 @@ class Ui_SisDomArduino(object):
         self.bEscuchar.setLocale(QtCore.QLocale(QtCore.QLocale.Spanish, QtCore.QLocale.Peru))
         self.bEscuchar.setText("Escuchar")
         self.bEscuchar.setObjectName("bEscuchar")
+
         self.bSalir = QtWidgets.QPushButton(SisDomArduino)
         self.bSalir.setGeometry(QtCore.QRect(20, 360, 460, 30))
         font = QtGui.QFont()
@@ -216,6 +218,7 @@ class Ui_SisDomArduino(object):
         self.titulo04.setText("Sistema Inteligente")
         self.titulo04.setAlignment(QtCore.Qt.AlignCenter)
         self.titulo04.setObjectName("titulo04")
+
         self.txt1 = QtWidgets.QLabel(SisDomArduino)
         self.txt1.setEnabled(True)
         self.txt1.setGeometry(QtCore.QRect(170, 310, 150, 30))
@@ -234,6 +237,7 @@ class Ui_SisDomArduino(object):
         self.txt1.setText("Estado: No iniciado.")
         self.txt1.setAlignment(QtCore.Qt.AlignLeading|QtCore.Qt.AlignLeft|QtCore.Qt.AlignVCenter)
         self.txt1.setObjectName("txt1")
+        
         self.bLed2 = QtWidgets.QPushButton(SisDomArduino)
         self.bLed2.setGeometry(QtCore.QRect(310, 140, 110, 30))
         font = QtGui.QFont()
