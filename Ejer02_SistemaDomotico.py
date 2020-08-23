@@ -25,6 +25,7 @@ class ProySisDom(qw.QWidget):
         self.ventana.bConect.clicked.connect(self.iniciaPuerto)
         self.ventana.bDesconect.clicked.connect(self.cierraPuerto)
         #self.ventana.bLed1.clicked.connect(self)
+        self.ventana.bSalir.clicked.connect(self.apagarSistema)
 
     def iniciaPuerto(self):
         try:
@@ -38,12 +39,22 @@ class ProySisDom(qw.QWidget):
             self.ventana.bDesconect.setEnabled(False)
             self.ventana.bConect.setEnabled(True)
 
-    def cierraPuerto(self, cadena):
+    def cierraPuerto(self):
         self.ventana.bDesconect.setEnabled(False)
         self.ventana.bConect.setEnabled(True)
         self.puertoSerial.close()
         print("Puerto "+self.ventana.listaPuertos.currentText()+" cerrado.")
 
+    def apagarSistema(self):
+        try:
+            print("Verificando puertos abiertos...")
+            self.cierraPuerto()
+            print("Puertos cerrados.")
+        except:
+            print("No se inició ningún puerto. Cerrando...")
+        #Con cualquiera de las siguiente líneas funciona para cerrar la ventana:
+        #self.ProySisDom.close()
+        qw.QApplication.instance().quit() #Pero este no da errores.
 
 def main():
     from sys import argv, exit

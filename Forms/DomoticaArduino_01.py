@@ -64,6 +64,7 @@ class Ui_SisDomArduino(object):
         self.bLed1.setLocale(QtCore.QLocale(QtCore.QLocale.Spanish, QtCore.QLocale.Peru))
         self.bLed1.setText("Led 01 On/Off")
         self.bLed1.setObjectName("bLed1")
+
         self.bEscuchar = QtWidgets.QPushButton(SisDomArduino)
         self.bEscuchar.setEnabled(False)
         self.bEscuchar.setGeometry(QtCore.QRect(80, 310, 70, 30))
@@ -80,6 +81,7 @@ class Ui_SisDomArduino(object):
         self.bEscuchar.setLocale(QtCore.QLocale(QtCore.QLocale.Spanish, QtCore.QLocale.Peru))
         self.bEscuchar.setText("Escuchar")
         self.bEscuchar.setObjectName("bEscuchar")
+        
         self.bSalir = QtWidgets.QPushButton(SisDomArduino)
         self.bSalir.setGeometry(QtCore.QRect(20, 360, 460, 30))
         font = QtGui.QFont()
@@ -342,8 +344,8 @@ class Ui_SisDomArduino(object):
         self.img03.setObjectName("img03")
 
         self.retranslateUi(SisDomArduino)
-        self.bSalir.clicked.connect(SisDomArduino.close)
-        QtCore.QMetaObject.connectSlotsByName(SisDomArduino)
+        #self.bSalir.clicked.connect(SisDomArduino.close)
+        #QtCore.QMetaObject.connectSlotsByName(SisDomArduino)
         SisDomArduino.setTabOrder(self.bConect, self.bDesconect)
         SisDomArduino.setTabOrder(self.bDesconect, self.listaPuertos)
         SisDomArduino.setTabOrder(self.listaPuertos, self.bEscuchar)
