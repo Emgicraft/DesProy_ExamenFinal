@@ -8,7 +8,6 @@ Ejercicio 02 - Sistema Domótico
 from functools import partial
 import serial
 
-from numpy import sqrt
 from PyQt5 import QtGui, QtCore
 import PyQt5.QtWidgets as qw
 
@@ -24,7 +23,6 @@ class ProySisDom(qw.QWidget):
 
         self.ventana.bConect.clicked.connect(self.iniciaPuerto)
         self.ventana.bDesconect.clicked.connect(self.cierraPuerto)
-        #self.ventana.bLed1.clicked.connect(self)
         self.ventana.bSalir.clicked.connect(self.apagarSistema)
         self.ventana.bLed1.clicked.connect(partial(self.controlaLed, '1'))
         self.ventana.bLed2.clicked.connect(partial(self.controlaLed, '2'))
@@ -50,7 +48,7 @@ class ProySisDom(qw.QWidget):
         print("Puerto "+self.ventana.listaPuertos.currentText()+" cerrado.")
 
     def controlaLed(self, numLed):
-        self.puertoSerial.write(numLed.encode('ascii') )
+        self.puertoSerial.write(numLed.encode('ascii'))
 
     def apagarSistema(self):
         try:

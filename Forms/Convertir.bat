@@ -1,1 +1,1 @@
-pyuic5.exe DomoticaArduino_01.ui -o DomoticaArduino_01.py
+pyuic5.exe DomoticaArduino_02.ui -o DomoticaArduino_02.py
