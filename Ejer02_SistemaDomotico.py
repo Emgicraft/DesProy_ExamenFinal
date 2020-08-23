@@ -26,6 +26,10 @@ class ProySisDom(qw.QWidget):
         self.ventana.bDesconect.clicked.connect(self.cierraPuerto)
         #self.ventana.bLed1.clicked.connect(self)
         self.ventana.bSalir.clicked.connect(self.apagarSistema)
+        self.ventana.bLed1.clicked.connect(partial(self.controlaLed, '1'))
+        self.ventana.bLed2.clicked.connect(partial(self.controlaLed, '2'))
+        self.ventana.bLed3.clicked.connect(partial(self.controlaLed, "3"))
+        self.ventana.bLed4.clicked.connect(partial(self.controlaLed, "4"))
 
     def iniciaPuerto(self):
         try:
@@ -44,6 +48,9 @@ class ProySisDom(qw.QWidget):
         self.ventana.bConect.setEnabled(True)
         self.puertoSerial.close()
         print("Puerto "+self.ventana.listaPuertos.currentText()+" cerrado.")
+
+    def controlaLed(self, numLed):
+        self.puertoSerial.write(numLed.encode('ascii') )
 
     def apagarSistema(self):
         try:

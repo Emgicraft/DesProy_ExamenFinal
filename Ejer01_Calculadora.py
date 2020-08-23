@@ -62,11 +62,6 @@ class ProyCalcu(qw.QWidget):
         else:
             print("<func: escribirPantalla>Error! No se reconoció el parámetro.")
 
-    def cargarRes(self):
-        self.res+=self.caract
-        self.caract=""
-        self.ventana.pantallaCalcu.clear()
-
     def borraCaracter(self, cadena):
         cadena=cadena[::-1].replace(cadena[::-1][0], "", 1)[::-1]
         return cadena
