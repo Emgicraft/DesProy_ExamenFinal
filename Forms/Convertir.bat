@@ -1,1 +1,1 @@
-pyuic5.exe DomoticaArduino_02.ui -o DomoticaArduino_02.py
+pyuic5.exe AppLibre01_CalcuTemperatura.ui -o AppLibre01_CalcuTemperatura.py

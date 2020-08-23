@@ -9,7 +9,6 @@ from functools import partial
 
 import serial
 import pyttsx3
-from PyQt5 import QtGui, QtCore, QtMultimedia
 import PyQt5.QtWidgets as qw
 import speech_recognition as sr
 
