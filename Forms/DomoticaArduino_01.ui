@@ -34,6 +34,9 @@
   <property name="accessibleDescription">
    <string notr="true"/>
   </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
   <property name="locale">
    <locale language="Spanish" country="Peru"/>
   </property>
@@ -41,6 +44,9 @@
    <string notr="true"/>
   </property>
   <widget class="QPushButton" name="bConect">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -78,12 +84,12 @@
     <string notr="true">Conectar</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="bLed1On">
+  <widget class="QPushButton" name="bLed1">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>310</x>
      <y>100</y>
-     <width>90</width>
+     <width>110</width>
      <height>30</height>
     </rect>
    </property>
@@ -96,7 +102,7 @@
     </font>
    </property>
    <property name="toolTip">
-    <string notr="true">Encender Led 01</string>
+    <string notr="true">Controla Led 01</string>
    </property>
    <property name="statusTip">
     <string notr="true"/>
@@ -114,13 +120,16 @@
     <locale language="Spanish" country="Peru"/>
    </property>
    <property name="text">
-    <string notr="true">Led 01 On</string>
+    <string notr="true">Led 01 On/Off</string>
    </property>
   </widget>
   <widget class="QPushButton" name="bEscuchar">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>80</x>
      <y>310</y>
      <width>70</width>
      <height>30</height>
@@ -314,6 +323,66 @@
    <property name="placeholderText">
     <string notr="true">Puerto</string>
    </property>
+   <item>
+    <property name="text">
+     <string notr="true">COM1</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM2</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM3</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM4</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM5</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM6</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM7</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM8</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM9</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM10</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM11</string>
+    </property>
+   </item>
+   <item>
+    <property name="text">
+     <string notr="true">COM12</string>
+    </property>
+   </item>
   </widget>
   <widget class="QLabel" name="titulo03">
    <property name="geometry">
@@ -356,6 +425,9 @@
    </property>
   </widget>
   <widget class="QPushButton" name="bDesconect">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
      <x>30</x>
@@ -394,9 +466,12 @@
    </property>
   </widget>
   <widget class="QLabel" name="titulo04">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>30</x>
+     <x>40</x>
      <y>270</y>
      <width>190</width>
      <height>30</height>
@@ -433,49 +508,13 @@
     <set>Qt::AlignCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="bLed1Off">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>100</y>
-     <width>90</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <pointsize>12</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string notr="true">Apagar Led 01</string>
-   </property>
-   <property name="statusTip">
-    <string notr="true"/>
-   </property>
-   <property name="whatsThis">
-    <string notr="true"/>
-   </property>
-   <property name="accessibleName">
-    <string notr="true"/>
-   </property>
-   <property name="accessibleDescription">
-    <string notr="true"/>
-   </property>
-   <property name="locale">
-    <locale language="Spanish" country="Peru"/>
-   </property>
-   <property name="text">
-    <string notr="true">Led 01 Off</string>
-   </property>
-  </widget>
   <widget class="QLabel" name="txt1">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
    <property name="geometry">
     <rect>
-     <x>120</x>
+     <x>170</x>
      <y>310</y>
      <width>150</width>
      <height>30</height>
@@ -515,9 +554,9 @@
   <widget class="QPushButton" name="bLed2On">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>310</x>
      <y>140</y>
-     <width>90</width>
+     <width>110</width>
      <height>30</height>
     </rect>
    </property>
@@ -530,7 +569,7 @@
     </font>
    </property>
    <property name="toolTip">
-    <string notr="true">Encender Led 02</string>
+    <string notr="true">Controla Led 02</string>
    </property>
    <property name="statusTip">
     <string notr="true"/>
@@ -548,54 +587,15 @@
     <locale language="Spanish" country="Peru"/>
    </property>
    <property name="text">
-    <string notr="true">Led 02 On</string>
+    <string notr="true">Led 02 On/Off</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="bLed2Off">
+  <widget class="QPushButton" name="bLed3">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>140</y>
-     <width>90</width>
-     <height>30</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Arial</family>
-     <pointsize>12</pointsize>
-     <weight>50</weight>
-     <bold>false</bold>
-    </font>
-   </property>
-   <property name="toolTip">
-    <string notr="true">Apagar Led 02</string>
-   </property>
-   <property name="statusTip">
-    <string notr="true"/>
-   </property>
-   <property name="whatsThis">
-    <string notr="true"/>
-   </property>
-   <property name="accessibleName">
-    <string notr="true"/>
-   </property>
-   <property name="accessibleDescription">
-    <string notr="true"/>
-   </property>
-   <property name="locale">
-    <locale language="Spanish" country="Peru"/>
-   </property>
-   <property name="text">
-    <string notr="true">Led 02 Off</string>
-   </property>
-  </widget>
-  <widget class="QPushButton" name="bLed3On">
-   <property name="geometry">
-    <rect>
-     <x>270</x>
+     <x>310</x>
      <y>180</y>
-     <width>90</width>
+     <width>110</width>
      <height>30</height>
     </rect>
    </property>
@@ -608,7 +608,7 @@
     </font>
    </property>
    <property name="toolTip">
-    <string notr="true">Encender Led 03</string>
+    <string notr="true">Controla Led 03</string>
    </property>
    <property name="statusTip">
     <string notr="true"/>
@@ -626,15 +626,15 @@
     <locale language="Spanish" country="Peru"/>
    </property>
    <property name="text">
-    <string notr="true">Led 03 On</string>
+    <string notr="true">Led 03 On/Off</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="bLed4On">
+  <widget class="QPushButton" name="bLed4">
    <property name="geometry">
     <rect>
-     <x>270</x>
+     <x>310</x>
      <y>220</y>
-     <width>90</width>
+     <width>110</width>
      <height>30</height>
     </rect>
    </property>
@@ -647,7 +647,7 @@
     </font>
    </property>
    <property name="toolTip">
-    <string notr="true">Encender Led 04</string>
+    <string notr="true">Controla Led 04</string>
    </property>
    <property name="statusTip">
     <string notr="true"/>
@@ -665,16 +665,16 @@
     <locale language="Spanish" country="Peru"/>
    </property>
    <property name="text">
-    <string notr="true">Led 04 On</string>
+    <string notr="true">Led 04 On/Off</string>
    </property>
   </widget>
-  <widget class="QPushButton" name="bLed4Off">
+  <widget class="QLabel" name="img01">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>220</y>
-     <width>90</width>
-     <height>30</height>
+     <x>50</x>
+     <y>200</y>
+     <width>65</width>
+     <height>65</height>
     </rect>
    </property>
    <property name="font">
@@ -683,12 +683,10 @@
      <pointsize>12</pointsize>
      <weight>50</weight>
      <bold>false</bold>
+     <underline>false</underline>
     </font>
    </property>
    <property name="toolTip">
-    <string notr="true">Apagar Led 04</string>
-   </property>
-   <property name="statusTip">
     <string notr="true"/>
    </property>
    <property name="whatsThis">
@@ -704,16 +702,19 @@
     <locale language="Spanish" country="Peru"/>
    </property>
    <property name="text">
-    <string notr="true">Led 04 Off</string>
+    <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/MisImagenes/ConectorSerial_64x64.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QPushButton" name="bLed3Off">
+  <widget class="QLabel" name="img02">
    <property name="geometry">
     <rect>
-     <x>380</x>
-     <y>180</y>
-     <width>90</width>
-     <height>30</height>
+     <x>180</x>
+     <y>170</y>
+     <width>65</width>
+     <height>65</height>
     </rect>
    </property>
    <property name="font">
@@ -722,12 +723,10 @@
      <pointsize>12</pointsize>
      <weight>50</weight>
      <bold>false</bold>
+     <underline>false</underline>
     </font>
    </property>
    <property name="toolTip">
-    <string notr="true">Apagar Led 03</string>
-   </property>
-   <property name="statusTip">
     <string notr="true"/>
    </property>
    <property name="whatsThis">
@@ -743,38 +742,53 @@
     <locale language="Spanish" country="Peru"/>
    </property>
    <property name="text">
-    <string notr="true">Led 03 Off</string>
+    <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/MisImagenes/ImagenDeLed__64x64.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
-  <widget class="QGraphicsView" name="graphicsView">
-   <property name="geometry">
-    <rect>
-     <x>30</x>
-     <y>190</y>
-     <width>111</width>
-     <height>71</height>
-    </rect>
-   </property>
-   <property name="toolTip">
-    <string notr="true"/>
-   </property>
-   <property name="statusTip">
-    <string notr="true"/>
-   </property>
-   <property name="whatsThis">
-    <string notr="true"/>
-   </property>
-   <property name="accessibleName">
-    <string notr="true"/>
-   </property>
-   <property name="accessibleDescription">
-    <string notr="true"/>
-   </property>
-   <property name="locale">
-    <locale language="Spanish" country="Peru"/>
-   </property>
-   <property name="interactive">
+  <widget class="QLabel" name="img03">
+   <property name="enabled">
     <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>330</x>
+     <y>280</y>
+     <width>65</width>
+     <height>65</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Arial</family>
+     <pointsize>12</pointsize>
+     <weight>50</weight>
+     <bold>false</bold>
+     <underline>false</underline>
+    </font>
+   </property>
+   <property name="toolTip">
+    <string notr="true"/>
+   </property>
+   <property name="whatsThis">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleName">
+    <string notr="true"/>
+   </property>
+   <property name="accessibleDescription">
+    <string notr="true"/>
+   </property>
+   <property name="locale">
+    <locale language="Spanish" country="Peru"/>
+   </property>
+   <property name="text">
+    <string notr="true">&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;img src=&quot;:/MisImagenes/Microfono_64x64.png&quot;/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignLeading|Qt::AlignLeft|Qt::AlignVCenter</set>
    </property>
   </widget>
  </widget>
@@ -783,18 +797,15 @@
   <tabstop>bDesconect</tabstop>
   <tabstop>listaPuertos</tabstop>
   <tabstop>bEscuchar</tabstop>
-  <tabstop>bLed1On</tabstop>
-  <tabstop>bLed1Off</tabstop>
+  <tabstop>bLed1</tabstop>
   <tabstop>bLed2On</tabstop>
-  <tabstop>bLed2Off</tabstop>
-  <tabstop>bLed3On</tabstop>
-  <tabstop>bLed3Off</tabstop>
-  <tabstop>bLed4On</tabstop>
-  <tabstop>bLed4Off</tabstop>
+  <tabstop>bLed3</tabstop>
+  <tabstop>bLed4</tabstop>
   <tabstop>bSalir</tabstop>
-  <tabstop>graphicsView</tabstop>
  </tabstops>
- <resources/>
+ <resources>
+  <include location="../Recursos/InsertImgToQtDesigner.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>bSalir</sender>

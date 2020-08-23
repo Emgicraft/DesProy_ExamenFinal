@@ -1,0 +1,11 @@
+<RCC>
+  <qresource prefix="MisImagenes">
+    <file>ConectorSerial_64x64.png</file>
+    <file>ImagenDeLed__64x64.png</file>
+    <file>Microfono_64x64.png</file>
+    <file>ConectorSerial.png</file>
+    <file>ImagenDeLed.png</file>
+    <file>MCServer-icon-64x64.png</file>
+    <file>Microfono.png</file>
+  </qresource>
+</RCC>
