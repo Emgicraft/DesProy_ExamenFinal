@@ -98,6 +98,7 @@ class Ui_CalcuTemperatura(object):
         self.titulo1.setAccessibleDescription("")
         self.titulo1.setLocale(QtCore.QLocale(QtCore.QLocale.Spanish, QtCore.QLocale.Peru))
         self.titulo1.setObjectName("titulo1")
+        
         self.txtSalida = QtWidgets.QLineEdit(CalcuTemperatura)
         self.txtSalida.setGeometry(QtCore.QRect(160, 110, 130, 30))
         font = QtGui.QFont()
