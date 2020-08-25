@@ -32,3 +32,9 @@ _Nota: Se escogió el comando 'verde' por el color del led asignado en Proteus._
 
 #### Ejercicio 04
 
+
+## Ejecutables!!
+
+Por último, cabe mencionar, que en la carpeta "Ejecutables", encontrarás los programas en .exe para que directamente los pruebes, aunque no están todos, debido a que se usaron librerías de reconocimiento de voz, es probable de que estas no se puedan compilar, tampoco no le he buscado una solución alternativa ya que estaba a contrareloj con el examen y es muy probable que estos archivos ya no los modifique.
+
+Pero eso no quita el hecho de que no haga más o similares, y mucho mejor trabajados. :smile:

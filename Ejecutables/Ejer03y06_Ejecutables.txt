@@ -1,0 +1,3 @@
+Al intentar usar el .exe del ejercicio 03 y del ejercicio 06, hubo una falla diciendo que no podía ejecutar el script, probablemente sea por las librerías que se están usando ya que el ejercicio 02 si funciona sin problemas.
+
+Después de realizar el segundo ejercicio 06, concluyo que la librería o las librerías que manejan conversión de texto a voz o viceversa, no se pueden compilar a .exe ese tipo de programas, al menos no conozco una forma.
