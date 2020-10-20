@@ -109,6 +109,6 @@ Como se aprecia en la imagen, básicamente con la lista desplegable elijes la co
 
 ---
 ## Ejecutables!!
-Por último, cabe mencionar, que en la carpeta "Ejecutables", encontrarás los programas en .exe para que directamente los pruebes, aunque no están todos, debido a que se usaron librerías de reconocimiento de voz, es probable de que estas no se puedan compilar, tampoco no le he buscado una solución alternativa ya que estaba a contrareloj con el examen y es muy probable que estos archivos ya no los modifique.
+Por último, cabe mencionar, que en la carpeta compartida "[Ejecutables](https://drive.google.com/drive/folders/15mvcbARFIPr2oyRCyh02q8u0NrN_ReYq?usp=sharing)", encontrarás los programas en .exe para que directamente los pruebes sin necesidad de instalar python o librerías, sin embargo, no están todos los programas, esto es debido a que en algunos se usaron librerías de reconocimiento de voz y es probable de que estas no se puedan comprimir a un .exe, tampoco le he buscado alguna solución a este problema ya que estaba a contrareloj con el examen.
 
-Pero eso no quita el hecho de que no haga más o similares, y mucho mejor trabajados. :smile:
+Por último, cabe decir que es muy probable que estos archivos ya no los modifique en un futuro, pero eso no quita el hecho de que no haga más programas similares, y mucho mejor trabajados. :smile:
